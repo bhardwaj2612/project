@@ -2,32 +2,238 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@keyframes rotateAndFadeOut {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0);
+        transform-origin: 0 0
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate(-90deg) translateY(-100px);
+        transform-origin: 0 0
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: rotate(90deg) translateY(100px);
+        transform-origin: 0 0
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0);
+        transform-origin: 0 0
+    }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.rotate-fade-out {
+    animation: rotateAndFadeOut 2s forwards;
+    transform-origin: 0 0
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.fade-in {
+    animation: fadeIn 2s forwards;
+    transform-origin: 0 0
+}
+
+.aniup {
+    animation: aniup 2s forwards
+}
+
+.anidown,
+.aniup {
+    background-color: #f472b6;
+    border-radius: 50%;
+    height: 800px;
+    left: 0;
+    opacity: .65;
+    position: absolute;
+    top: 0;
+    transform-origin: 0 0;
+    transition: transform 1s;
+    width: 800px;
+    z-index: 10
+}
+
+.anidown {
+    animation: anidown 2s forwards
+}
+
+@keyframes anidown {
+    0% {
+        opacity: 1;
+        transform: translateY(0) translateX(0)
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(752px) translateX(-207px)
+    }
+}
+
+@keyframes aniup {
+    0% {
+        opacity: 0;
+        transform: translateY(752px) translateX(-207px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0) translateX(0)
+    }
+}
+
+.hsuuev .container {
+    position: absolute
+}
+
+.hsuuev .container .parent {
+    animation: rotate 10s linear infinite;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    transform-origin: center;
+    width: 800px
+}
+
+.hsuuev .container .child {
+    background-color: #ff69b4;
+    border-radius: 50%;
+    height: 800px;
+    opacity: .65;
+    position: absolute;
+    width: 800px
+}
+
+.hsuuev .container .child-1 {
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.hsuuev .container .child-2 {
+    left: 150%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.hsuuev .container .child-3 {
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%)
+}
+
+.hsuuev .container .child-4 {
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.fade-in {
+    opacity: 1
+}
+
+.fade-in,
+.fade-out {
+    transition: opacity 1s cubic-bezier(.4, 0, .2, 1)
+}
+
+.fade-out {
+    opacity: 0
+}
+
+.containerwe {
+    align-items: center;
+    display: flex;
+    height: 2500px;
+    justify-content: space-between;
+    left: -78%;
+    position: absolute;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    width: 2500px;
+    will-change: transform
+}
+
+.containerwe .circle {
+    background: linear-gradient(132.67deg, rgba(241, 102, 51, .8) -5.44%, rgba(253, 45, 125, .8) 101.81%);
+    border-radius: 50%;
+    height: 800px;
+    opacity: .65;
+    width: 800px
+}
+
+/* profile */
+
+.gallery {
+    display: flex;
+    width: 70vw;
+
+
+}
+
+.box {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    flex: none;
+}
+
+.box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    transform: scale(1.1)
+}
+
+.gallery-video {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    flex: none;
+}
+
+.semicircle {
+    clip-path: ellipse(50% 100% at 50% 100%)
+}
+
+@media not all and (min-width: 640px) {
+    .semicircle {
+        clip-path: none;
+        width: 100vw;
+        height: 50vh;
+    }
+
+}
+
+/* AboutUs */
+
+
+.img-wrap {
+    transform: rotate(12deg);
+    filter: brightness(50%);
+    transition: all 1s;
+}
+
+.wrap-text {
+    filter: brightness(50%);
+    transition: filter 1s;
+}
+
+.sub-1:hover .wrap-text {
+    filter: brightness(100%)
+}
+
+.sub-1:hover .img-wrap {
+    transform: rotate(-20deg) scale(1.1);
+    filter: brightness(100%)
 }
