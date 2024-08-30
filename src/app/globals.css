@@ -237,3 +237,52 @@
     transform: rotate(-20deg) scale(1.1);
     filter: brightness(100%)
 }
+
+/* recentshow */
+
+/* .gallery_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+} */
+
+/* .gallery_wrap1 {
+    display: flex;
+    width: 700px;
+   
+    overflow-x: scroll;
+
+
+} */
+
+/* .gallery_wrap1 div {
+    width: 100%;
+    border: 1px solid black;
+    flex: none;
+  
+} */
+
+/* .gallery_wrap1 .wrap-img {
+    width: 100%;
+    } */
+
+/* .gallery_wrap1 div img {
+
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+} */
+
+.wrap1::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* .gallery_wrap1 div :hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1)
+} */
