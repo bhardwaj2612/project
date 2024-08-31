@@ -275,8 +275,23 @@
     filter: grayscale(100%);
     transition: transform 0.5s;
 } */
+.wrap1 {
+    border: 1px solid black;
+}
 
-.wrap1::-webkit-scrollbar {
+.wrap2 {
+    border: 1px solid black;
+}
+
+.wrap3 {
+    border: 1px solid black;
+}
+
+.wrap4 {
+    border: 1px solid black;
+}
+
+.scrollHidden::-webkit-scrollbar {
     display: none;
 }
 
