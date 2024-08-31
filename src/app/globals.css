@@ -306,15 +306,17 @@
     height: 2000px;
 } */
 
-/* .cube {
-    border: 1px solid black;
-} */
-
-/* .cube1 {
-    border: 1px solid black;
+.cube {
+    clip-path: ellipse(100% 50% at 0% 50%);
 }
 
-.cube2 {
+.cube3 {
+    clip-path: ellipse(100% 50% at 100% 50%);
+}
+
+
+
+/* .cube2 {
 
     border: 1px solid black;
-} */
+}  */
