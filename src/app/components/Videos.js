@@ -7,7 +7,7 @@ const Videos = () => {
 
     return <>
         <div >
-            <div className="box-1" >
+            <div className="flex items-center justify-center" >
 
                 {check == 1 ?
                     <div className="gallery-video h-[60vh] mx-auto max-sm:w-[95vw] max-sm:h-[30vh]" >
@@ -67,7 +67,7 @@ const Videos = () => {
 
             </div>
 
-            <div className="bat w-[80%] mx-auto flex justify-center max-sm:w-[95%]" >
+            <div className="bat w-[80%] mx-auto flex justify-center max-sm:w-[100%]" >
                 <div>
                     <button style={{ background: check === 1 ? "#fff" : "black", color: check === 1 ? "black" : "#fff" }} className="btn bg-black w-[8rem] max-sm:w-[3rem] h-2 m-4 max-sm:h-1 rounded-lg cursor-pointer" onClick={() => setCheck(1)}></button>
                     <button style={{ background: check === 2 ? "#fff" : "black", color: check === 2 ? "black" : "#fff" }} className="btn bg-black w-[8rem] max-sm:w-[3rem] h-2 m-4 max-sm:h-1 rounded-lg cursor-pointer" onClick={() => setCheck(2)}></button>

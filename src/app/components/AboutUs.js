@@ -3,7 +3,7 @@ import Image from "next/image"
 const AboutUs = () => {
     return <>
         <section>
-            <div className="wrapeer mb-11 max-sm:mt-[20%]">
+            <div className="w-[100%] h-[100vh] mb-11 max-sm:mt-[20%]">
 
                 <div className="sub-1  ml-[10%] mt-[8%] max-sm:ml-[5%]  ">
                     <div className="flex gap-9 max-sm:gap-2" >

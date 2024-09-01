@@ -8,10 +8,10 @@ const Photo = () => {
 
     return <>
         <div >
-            <div className="box-1 " >
-                <div className="gallery max-sm:w-[95vw] max-sm:h-[40vh]">
+            <div className="flex items-center justify-center" >
+                <div className="flex w-[70vw] max-sm:w-[95vw]">
                     {count == 1 ?
-                        <div className="box  h-[60vh] mx-auto max-sm:w-[95vw] max-sm:h-[40vh]" >
+                        <div className="box w-[50vw] h-[60vh] mx-auto max-sm:w-[95vw] max-sm:h-[40vh]" >
                             <span style={{ 'backgroundImage': `url(${image[3]})`, "backgroundSize": "cover" }} className=" bg-black rounded-tl-[70%] rounded-bl-[70%] rounded-tr-[70%]">
                             </span>
 
@@ -119,11 +119,10 @@ const Photo = () => {
                                     </div> :
                                     <div></div>
                     }
-
                 </div>
             </div>
 
-            <div className="bat border-black w-[80%] mx-auto flex justify-center max-sm:w-[95%]" >
+            <div className="bat border-black w-[80%] mx-auto flex justify-center max-sm:w-[100%]" >
                 <div>
                     <button style={{ background: count === 1 ? "#fff" : "black", color: count === 1 ? "black" : "#fff" }} className="btn bg-black w-[8rem] max-sm:w-[3rem] h-2 m-4 max-sm:h-1 rounded-lg cursor-pointer" onClick={() => setCount(1)}></button>
                     <button style={{ background: count === 2 ? "#fff" : "black", color: count === 2 ? "black" : "#fff" }} className="btn bg-black w-[8rem] max-sm:w-[3rem] h-2 m-4 max-sm:h-1 rounded-lg cursor-pointer" onClick={() => setCount(2)}></button>
