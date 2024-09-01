@@ -29,9 +29,9 @@ const RecentShow = () => {
     }
     return <>
         <section>
-            <div className="w-[100%] h-[100vh] flex flex-col items-center mt-[7%]">
+            <div className="w-[100%] flex flex-col items-center my-[7%]">
 
-                <div className=" w-[50%] text-center wrap3" >
+                <div className=" w-[50%] max-sm:w-[65%] text-center " >
                     <h1 className="text-white text-5xl max-sm:text-xl">  Recent show made Star-studded vis StarClinch </h1>
                 </div>
 
@@ -39,7 +39,7 @@ const RecentShow = () => {
 
                     <Image onClick={() => slidleft()} src={"/images/back.png"} width={70} height={70} className="max-sm:hidden " />
 
-                    <div ref={slidLeft} className="scrollHidden rounded-tl-[50%] rounded-tr-[50%] flex items-center ml-[20%] max-sm:ml-0  mr-3 w-[50%] bg-white overflow-x-scroll">
+                    <div ref={slidLeft} className="scrollHidden rounded-tl-[50%] rounded-tr-[50%] flex items-center ml-[20%] max-sm:ml-0  mr-3 w-[50%]  max-sm:w-[60%] bg-white overflow-x-scroll">
 
                         <img src={image[0]} className="w-[100%] flex-none" />
                         <img src={image[2]} className="w-[100%] flex-none" />
