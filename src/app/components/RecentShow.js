@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 import { useRef, useState } from "react";
+import InfiniteSlider from "./InfiniteSlider";
 
 const RecentShow = () => {
     const image = ["/images/image-1.png", "/images/image-3.png", "/images/image-4.png", "/images/image-5.png"]
@@ -29,7 +30,11 @@ const RecentShow = () => {
     }
     return <>
         <section>
-            <div className="w-[100%] flex flex-col items-center my-[7%]">
+            <div className="w-[100%] h-[100vh] max-sm:h-[50vh] relative flex flex-col items-center mt-[70%] max-sm:mt-0">
+
+                <div className="absolute left-0  mt-10  news1" > <InfiniteSlider /></div>
+                <div className="absolute right-0 bottom-0 mt-12 news2 "  > <InfiniteSlider /></div>
+
 
                 <div className=" w-[50%] max-sm:w-[65%] text-center " >
                     <h1 className="text-white text-5xl max-sm:text-xl">  Recent show made Star-studded vis StarClinch </h1>

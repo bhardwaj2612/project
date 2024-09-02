@@ -8,7 +8,7 @@ const Profile = () => {
     return <>
         <section>
 
-            <div className="semicircle w-[100%] h-[100vh]  max-sm:h-[80vh] relative flex justify-center" >
+            <div className="semicircle w-[100%] h-[100vh] bg-gradient-to-b from-black via-[#020202] to-[#121212] max-sm:h-[80vh] relative flex justify-center" >
 
                 <div className="w-[90%] my-10 absolute max-sm:mt-[20%]" >
 

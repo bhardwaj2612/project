@@ -3,7 +3,7 @@ const Contect = () => {
 
     return <>
         <section>
-            <div className="  w-[100%] h-[100vh] flex justify-center items-center" >
+            <div className="  w-[100%] h-[100vh] mt-[15%] max-sm:mt-[20%] flex justify-center items-center" >
 
                 <div className="cube   opacity-60 bg-gradient-to-b from-pink-900 via-pink-950 to-[#121212] -z-1 absolute left-0  w-[23%] max-sm:w-[35%] h-[90vh]" ></div >
                 <div className="cube3  opacity-60 bg-gradient-to-r from-pink-900 via-pink-950 to-[#121212] -z-1 absolute right-0 w-[23%] max-sm:w-[35%] h-[90vh]" ></div >
