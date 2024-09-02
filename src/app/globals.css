@@ -245,7 +245,6 @@
 
 .slider {
     width: 100%;
-    border: 1px solid black;
     height: var(--height);
     overflow: hidden;
 }
@@ -262,7 +261,7 @@
 .slider .list .items {
     display: flex;
     width: var(--width);
-    /* height: var(--height); */
+    height: var(--height);
     position: absolute;
     left: 100%;
     animation: autoRun 10s linear infinite;
@@ -284,11 +283,11 @@
 }
 
 .news1 {
-    transform: rotate(-20deg);
+    transform: rotate(-23deg);
 }
 
 .news2 {
-    transform: rotate(-20deg);
+    transform: rotate(-23deg);
 }
 
 /* .slider .list .item span {

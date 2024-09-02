@@ -32,8 +32,8 @@ const RecentShow = () => {
         <section>
             <div className="w-[100%] h-[100vh] max-sm:h-[50vh] relative flex flex-col items-center mt-[70%] max-sm:mt-0">
 
-                <div className="absolute left-0  mt-10  news1" > <InfiniteSlider /></div>
-                <div className="absolute right-0 bottom-0 mt-12 news2 "  > <InfiniteSlider /></div>
+                <div className="absolute left-0  mt-10 max-sm:m-5 max-sm:w-[35%]  news1" > <InfiniteSlider /></div>
+                <div className="absolute right-0 bottom-0 mt-12 news2 w-[35%] "  > <InfiniteSlider /></div>
 
 
                 <div className=" w-[50%] max-sm:w-[65%] text-center " >
